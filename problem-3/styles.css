@@ -10,9 +10,6 @@
 
 li{
     list-style: none;
-    margin-bottom: 10px;
-    border: 1px solid #fff;
-    padding:10px;
 }
 
 body {
@@ -54,21 +51,25 @@ border-radius: 25px;
     outline: 1px solid #036c5f;
 }
 
-.user-container{
-    
+.user-container > h2{
+    text-align: center;
+    margin-top: 20px;
 }
 
 .user-container > ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     margin-top: 30px;
 }
 
 .user-profile > li {
     border: none;
+    margin-left: 50px;
+    font-size: 20px;
 }
+
+
 
 .avatar{
     width: 300px;
@@ -83,11 +84,20 @@ border-radius: 25px;
     gap: 90px;
 }
 
+.user-repo-list > li {
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+    padding:10px;
+}
+
 .user-repo-list{
     height: 50%;
     overflow-y: scroll;
+    
 }
-
+.user-repo-list::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
 .user-repo-container{
     
 }
