@@ -24,6 +24,8 @@ searchButton.addEventListener('click', () => {
         return Promise.all(values.map((value) => value.json()));
     }).then(values => {
 
+        userRepoList.innerHTML = "";
+
         //get user data
         userContainer.innerHTML = `
         <li>Name: ${values[0].name}</li>
