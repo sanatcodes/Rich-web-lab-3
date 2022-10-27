@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="error">Error: Validation Falied </div>
+    <div class="warning">No result found on search</div>
+    <div class="main-container">
+        <h2>Phone Directory </h2>
+
+        <div class="input-container">
+            <input class='contact-name' type="text" required placeholder="Contact Name">
+            <input class='mobile-number' type="text" required placeholder="Mobile Number">
+            <input class='email' type="text" required placeholder="Email">
+            <button class='add-contact-btn'>Add Contact</button>
+        </div>
+        
+        <div class="search-container">
+            <p>Search a contact by Mobile Number:</p>
+            <input class='search-bar' type="text" placeholder="Search">
+        </div>
+
+        <div class="show-contacts">
+            <p>Contacts Summary</p>
+
+            <table class="contacts-table-main">
+                <thead>
+                <tr>
+                    <th onClick=''class="name-btn">Name</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+                </thead>
+                <tbody class="contacts-table">
+                
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    
+
+    
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
