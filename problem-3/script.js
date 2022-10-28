@@ -26,6 +26,12 @@ searchButton.addEventListener('click', () => {
 
         userRepoList.innerHTML = "";
 
+        if(values[1].length > 5){
+            userRepoList.style.overflowy = "scroll";
+        } else {
+            userRepoList.style.overflowy = "auto";
+        }
+
         //get user data
         userContainer.innerHTML = `
         <li>Name: ${values[0].name}</li>

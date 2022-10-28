@@ -14,4 +14,4 @@ fetch('https://jsonplaceholder.typicode.com/posts')
       // post.body.forEach(word => {myMap.has(word) ? myMap[word]++ : myMap.set(word,1)})
   }));
 
-console.log(myMap);
+console.log('Frequency maps for all body contents',myMap);

@@ -132,6 +132,9 @@ function nameValidation(inputArr){
 }
 
 function numberValidation(inputArr){
+    if(inputArr.length > 10){
+        return false;
+    } 
    isValidNumber = /\d+/g
    return isValidNumber.test(inputArr);
 }
